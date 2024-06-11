@@ -1,7 +1,7 @@
 Create AWS resource thriugh terraform. 
 
-•There should be an S3 bucket referenced in Terraform as bucket o and named upload-bucket 0 . The ACL should be private 0.
-• There should be an SQS queue referenced in Terraform as queue and named upload-queue o .
+•There should be an S3 bucket referenced in Terraform as bucket and named upload-bucket. The ACL should be private 0.
+• There should be an SQS queue referenced in Terraform as queue and named upload-queue.
 • The above queue should have a delay specified as 60 seconds, a max message size of 8kB, should discard messages after 48 hours and should wait for up to 15 seconds for messages to be received.
 • There should be an IAM policy document created as Terraform data referenced as iam_notify-policy-doc which should describe the policy that will be used by the bucket notification hook to post messages to the queue, or you can use EOF expression in policy and omit this step.
 • The above document should contain one statement with id equal to 10 .
